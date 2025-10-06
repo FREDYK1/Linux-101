@@ -56,9 +56,11 @@
 ## Exercise 7
 ### What is the `pwd` command what does it do?
     The `pwd` (print working directory) is used to display the current directory you are in within the terminal.
+![pwd command](images/pwd_command.png)
 ### What is the difference between `echo` and `cd` command?
     The `echo` command is used to display a line of text or a variable value in the terminal, while the `cd` (change directory)
     command is used to change the current working directory to a specified directory.
+![echo and cd](images/echo_cd.png)
 
 
 ## Exercise 8
@@ -71,7 +73,7 @@
 
 ## Exercise 9
 ### Using the `date` command, print out the current day in the terminal.
-    date +%
+![date command](images/date_command.png)
 ### What is the difference between `awk` and `grep` commands? Please provide examples.
     The `grep` command is used to search for specific patterns or strings within a file or input, while the `awk` command is a powerful text processing tool that can perform complex operations on data, such as filtering, transforming, and formatting.
 
