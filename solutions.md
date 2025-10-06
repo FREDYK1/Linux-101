@@ -2,18 +2,9 @@
 ### What is the difference between 'cat' and 'touch' commands.
   Answer: cat is use to display the content of a file, while touch is used to create an empty file or update the timestamp of an existing file.
 
-### Create a file useing the 'cat'  and the 'touch' commands.
-  Answer: To create a file using the 'cat' command, you can use the following syntax:
-  ```
-  cat filename
-  ```
-  - Display the content of a file. 
-
-  ```
-  touch filename
-  ```
-  - This will create an empty file with the specified name.
-
+### Create a file using the 'cat'  and the 'touch' commands.
+![Cat](images/create_file_with_cat.png)
+![Touch](images/create_file_with_touch.png)
 
 ## Exercise 2
 ### What is file permissions in linux and what are the various ways of displaying the file permissions in linux.
@@ -36,15 +27,15 @@
     wc (word count)
 
 ### Secondly, apply the command to the `animals.txt` file attached to this exercises.
-    wc animals.txt
+![word count](images/wc.png)
 
 
 ## Exercise 4
 ### Using a `linux command`, get the first 3 lines in the `animals.txt`
-    head -n 3 animals.txt
+![head command](images/first_3_lines.png)
 
 ### In addition to getting the first 3 lines, count only the words within this range.🫣
-    head -n 3 animals.txt | wc -w
+![head and wc command](images/first3_and_wc.png)
 
 
 ## Exercise 5
@@ -52,9 +43,7 @@
     grep
 
 ### Using this command, search for the words, `Nutshell`, `Perl` and `Dansoman` in `animals.txt`
-    grep 'Nutshell' animals.txt
-    grep 'Perl' animals.txt
-    grep 'Dansoman' animals.txt
+![grep command](images/grep_search.png)
 
 
 ## Exercise 6
@@ -76,25 +65,21 @@
 ### What is the `dirs` command in linux and what does it do?
     The `dirs` command in Linux is used to display the list of directories in the directory stack.
 ### I need to find out what the command `mv` does, what command do I need to use to find out more about the `mv` command in linux.
-    The mv command in Linux is used to move or rename files and directories. It is a fundamental command for managing 
-    files in a Linux environment.
+    You can use the `man mv` command to find out more about the `mv` command in Linux.
+![man](images/man_mv.png)
 
 
 ## Exercise 9
 ### Using the `date` command, print out the current day in the terminal.
-    date +%A
+    date +%
 ### What is the difference between `awk` and `grep` commands? Please provide examples.
     The `grep` command is used to search for specific patterns or strings within a file or input, while the `awk` command is a powerful text processing tool that can perform complex operations on data, such as filtering, transforming, and formatting.
 
-    Example of `grep`:
-    ```
-        grep 'pattern' filename
-    ```
+Example of `grep`:
 
+![grep example](images/grep_search.png)
     Example of `awk`:
-    ```
-    awk '{print $1}' filename
-    ```
+![awk example](images/awk.png)
 
 
  ## Exercise 10
@@ -118,7 +103,7 @@
 
 ## Exercise 11
 ### There is a command in linux for seeing a type of a file in a directory what command is that?
-    The `file` command is used to determine the type of a file in a directory.
+![file command](images/file_command.png)
 
 
 ## Exercise 12
@@ -132,18 +117,7 @@
 ## Exercise 13
 ### In unix are 2 commands `head` and `tail`. Kindly illustrate how this is used in the git bas terminal.
     The `head` command is used to display the first few lines of a file, while the `tail` command is used to display the last few lines of a file.
-
-    Example of using `head`:
-    ```
-    head -n 5 filename.txt
-    ```
-    This command will display the first 5 lines of the file named "filename.txt".
-
-    Example of using `tail`:
-    ```
-    tail -n 5 filename.txt
-    ```
-    This command will display the last 5 lines of the file named "filename.txt".
+![head and tail](images/head_tail.png)
 
 
 ## Exercise 14
@@ -180,10 +154,10 @@ NB: add screenshots for solutions to the ff questions
   ```
   NB: add screenshots for solutions to the ff questions
 ### Find all ERROR entries
-    grep "ERROR" server.log
+![Find ERROR](images/error.png)
 ### Count how many WARNING entries exist
-    grep -c "WARNING" server.log
+![Count WARNING](images/num_warning.png)
 ### Extract all timestamps (first two columns)
-    awk '{print $1, $2}' server.log
+![Extract timestamps](images/timestamps.png)
 ### Find lines that contain either "login" or "logout"
-    grep -E "login|logout" server.log
+![Find login or logout](images/login_logout.png)
